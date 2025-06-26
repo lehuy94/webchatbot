@@ -1,0 +1,14 @@
+tôi muốn tạo một ứng dụng python chatbot trả lời các thông tin về các file mà tôi thêm vào
+sử dụng api key của google aistudio, api thêm trực tiếp trong code
+tạo giao diện với streamlit
+tôi muốn đóng gói thành một ứng dụng độc lập có thể chạy ở máy tính khác.
+
+run:
+.\venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run main.py
+
+build:
+pip install pyinstaller
+pyinstaller --noconfirm --onefile --collect-all streamlit main.py
+#--windowed
