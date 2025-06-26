@@ -8,6 +8,16 @@ run:
 pip install -r requirements.txt
 streamlit run main.py
 
+up streamlit:
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remot add origin https://github.com/...
+git push -u origin main
+
+https://webchatbot-abc.streamlit.app/
+
 build:
 pip install pyinstaller
 pyinstaller --noconfirm --onefile --collect-all streamlit main.py

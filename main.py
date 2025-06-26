@@ -99,7 +99,7 @@ def main():
     Main function to run the Streamlit chatbot application.
     """
     st.set_page_config(page_title="Chatbot đọc tệp (Gemini AI)", page_icon="📄", layout="centered")
-    st.title("📄 Chatbot đọc tệp")
+    st.title("📄 Chatbot")
     st.markdown("""
         Chào mừng bạn đến với Chatbot đọc tệp!
         Tải lên một tệp văn bản và hỏi tôi bất cứ điều gì liên quan đến nội dung của nó.
