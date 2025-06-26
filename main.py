@@ -13,7 +13,9 @@ load_dotenv()
 # Get your Google API Key from environment variables.
 # It's recommended to set GOOGLE_API_KEY in your system's environment
 # or in a .env file in the root of your project.
-API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDrJqaw1_kyABsR1NyW2YBSGy1JKmqKsaY")
+
+API_KEY = os.getenv("GOOGLE_API_KEY")
+#API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 if not API_KEY:
     st.error("Lỗi: Không tìm thấy GOOGLE_API_KEY. Vui lòng đặt nó làm biến môi trường hoặc trong tệp .env.")
